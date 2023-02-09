@@ -4,12 +4,24 @@
   </div>
 </template>
 
+<script lang="ts" setup>
+// import { ref, watch, onMounted } from 'vue';
+
+
+// const name = ref<string>('')
+
+// const send =()=> {
+//   console.log(name.value)
+//   name.value = ''
+// }
+// watch(name, (newName)=> {
+//   localStorage.setItem('xy', newName)
+// })
+
+// onMounted(()=> {
+//   name.value = localStorage.getItem('xy') || ''
+// })
+</script>
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
+
 </style>
