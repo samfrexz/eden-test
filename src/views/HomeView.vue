@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useStore } from 'vuex';
-import { ref, onMounted, computed, watch } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import CardImages from '@/components/CardImages.vue';
 import "vue-skeletor/dist/vue-skeletor.css";
 import { Skeletor } from 'vue-skeletor';
@@ -10,8 +10,6 @@ const store = useStore()
 const getImages = computed(()=> {
   return store.getters.getDogImgs
 })
-
-const allDogs = ref<string[]>([])
 
 const seconds = ref<number>(500)
 

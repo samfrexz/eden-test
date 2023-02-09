@@ -1,10 +1,9 @@
 import { createStore } from 'vuex'
 import { getDogImages } from '@/services'
 
-
 export default createStore({
   state: {
-    dogImgs: <string[]>[],
+    dogImgs: <string[]> [],
     loadingState: <boolean> false,
   },
   getters: {
