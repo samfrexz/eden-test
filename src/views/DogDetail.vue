@@ -6,9 +6,14 @@
     </div>
     <div class="card__det">
       <img :src="dogDetail" alt="dog image" />
-      <p>
-        The area of cells in the brain that detect different smells is around 40 times larger in dogs than humans. This means that your dog can pick up on way more smells than we ever could. This is why dogs are often used to sniff out people, drugs and even money!
-      </p>
+      <div>
+        <p>
+          The area of cells in the brain that detect different smells is around 40 times larger in dogs than humans. This means that your dog can pick up on way more smells than we ever could. This is why dogs are often used to sniff out people, drugs and even money!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi enim culpa dicta sint veritatis aspernatur deleniti eligendi vel nam ad harum repellat incidunt quod, eaque nesciunt pariatur corporis est ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis adipisci quae iste aperiam tenetur nemo voluptate magni, ratione repellendus ullam sequi porro, placeat quaerat distinctio? Corrupti laboriosam quos corporis?
+        </p>
+      </div>
     </div>
   </main>
 </template>
@@ -60,34 +65,23 @@ main {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    // height: 300px;
-    
     img {
-      display: block;
-      object-fit: cover;
-      border-radius: 4px;
+      border-radius: 10px;
+      border: 7px solid #fff;
+      height: 300px;
       width: 100%;
-      height: 100%;
-      border: 5px solid #fff;
-   }
-   p {
-    width: 100%;
-   }
-   @media(min-width: 640px){
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    img {
-      display: block;
-      object-fit: contain;
-      border-radius: 4px;
-      width: 50%;
-      height: 100%;
-      border: 5px solid #fff;
-   }
-   p {
-    width: 50%;
-   }
-   }
+      object-fit: cover;
+      
+    }
+    p {
+      line-height: 30px;
+    }
+    @media(min-width: 640px){
+      flex-wrap: nowrap;
+      img {
+        width: auto;
+      }
+    }
   }
 }
 </style>
