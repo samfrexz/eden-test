@@ -31,6 +31,10 @@ defineProps<{
     width: 100%;
     height: 100%;
     border: 5px solid #fff;
+    &:hover {
+      transform: scaleX(-1);
+      transition: width 2s;
+    }
   }
   @media(min-width: 640px){
     img {

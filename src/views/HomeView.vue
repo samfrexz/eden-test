@@ -41,7 +41,7 @@ onMounted(()=> {
         v-for="(dog, index) in getImages" 
         :key="index"
       >
-          <RouterLink :to="{path: `/${index}`}">
+          <RouterLink :to="{path: `/dog-detail/${index}`}">
             <CardImages
               :dogImage="dog"
               alt="random dog images"
